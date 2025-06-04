@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатория "НИИ-14"</title>
+    <link rel="stylesheet" href="NII-14.css">
+</head>
+<body>
+    <div class="terminal">
+        <h1>Добро пожаловать в систему "НИИ-14"</h1>
+        <p>Вход только для сотрудников</p>
+
+        <form id="loginForm">
+            <label for="code">Код сотрудника:</label>
+            <input type="text" id="code" name="code" placeholder="Введите код" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required>
+
+            <button type="submit">Войти</button>
+        </form>
+        <div id="output"></div>
+    </div>    
+
+    <script src="NII-14.js"></script>
+</body>
+</html>

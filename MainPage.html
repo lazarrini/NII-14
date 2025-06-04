@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лаборатория ΔС-03 — Главная</title>
+  <link rel="stylesheet" href="MainPage.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Лаборатория "НИИ-14"</h1>
+      <p class="subtitle">Федеральное учреждение по изучению экологических и социальных проблем</p>
+    </header>
+
+    <section class="greeting">
+      <p>Здравствуйте, <span id="username">Сотрудник</span>!</p>
+      <p>Уровень доступа: A</p>
+    </section>
+
+    <section class="news">
+      <h2>Новости лаборатории</h2>
+      
+      <div class="news-item">
+        <p class="date">04.06.2025</p>
+        <p><strong>Призведена изоляция сектора 7-B.</strong> Все перемещения временно ограничены.</p>
+      </div>
+
+      <div class="news-item">
+        <p class="date">01.06.2025</p>
+        <p><strong>Новая система допуска введена в эксплуатацию.</strong> Для входа на территорию лаборатории, необходима ключ-карта.</p>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Получаем код сотрудника из localStorage
+    const code = localStorage.getItem("username") || "Сотрудник";
+    document.getElementById("username").textContent = `Сотрудник ${code}`;
+  </script>
+</body>
+</html>
