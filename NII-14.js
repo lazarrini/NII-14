@@ -2,8 +2,8 @@ const form = document.getElementById('loginForm');
 const output = document.getElementById('output');
 
 // Пример правильных данных
-const correctCode = "a-771";
-const correctPassword = "horizon13";
+const correctCode = "Gmirya";
+const correctPassword = "sovaLera777";
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
